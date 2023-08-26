@@ -1,11 +1,11 @@
 # nginx 如何处理请求
 
 - [基于名称的虚拟服务器](#name_based_virtual_servers)
-- [如何使用未定义的 server 名称来阻止处理请求](#how_to_prevent_undefined_server_names)
+- [如何组阻止处理具有未定义 server name 的请求](#how_to_prevent_undefined_server_names)
 - [基于名称和 IP 混合的虚拟服务器](#mixed_name_ip_based_servers)
 - [一个简单的 PHP 站点配置](#simple_php_site_configuration)
 
-<a id="name_based_virtual_servers"></a>
+<div id="name_based_virtual_servers"></div>
 
 ## 基于名称的虚拟服务器
 
@@ -47,7 +47,7 @@ server {
 
 <a id="how_to_prevent_undefined_server_names"></a>
 
-## 如何使用未定义的 server 名称来阻止处理请求
+## 如何组阻止处理具有未定义 server name 的请求
 
 如果不允许没有 “Host” header 字段的请求，可以定义一个丢弃请求的 server：
 
@@ -61,7 +61,7 @@ server {
 
 这里的 `server` 名称设置为一个空字符串，会匹配不带 `Host` 的 header 域请求，nginx 会返回一个表示关闭连接的非标准代码 444。
 
-> 自 0.8.48 版本开始，这是 `server` 名称的默认设置，因此可以省略 `server name ""`。在早期版本中，机器的主机名被作为 `server` 的默认名称。
+> 自 0.8.48 版本开始，这是 `server` 名称的默认设置，因此可以省略 `server name ""`。在早期版本中，机器（本机？）的主机名被作为 `server` 的默认名称。
 
 <a id="mixed_name_ip_based_servers"></a>
 
