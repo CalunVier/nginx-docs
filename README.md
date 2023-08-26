@@ -9,7 +9,7 @@ Nginx 官方文档中文翻译版，由本人在学习 nginx 时顺带翻译。�
 
 如果您发现内容存在错误或者不当之处，欢迎提出 issue 或 PR，期待您的加入：[如何贡献](CONTRIBUTING.md)。
 
-在线阅读：[Github](blob/master/SUMMARY.md)
+在线阅读：[Github](SUMMARY.md)
 
 ## 关于此fork
 
