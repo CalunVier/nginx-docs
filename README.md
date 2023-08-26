@@ -9,7 +9,11 @@ Nginx 官方文档中文翻译版，由本人在学习 nginx 时顺带翻译。�
 
 如果您发现内容存在错误或者不当之处，欢迎提出 issue 或 PR，期待您的加入：[如何贡献](CONTRIBUTING.md)。
 
-在线阅读：[Github](https://github.com/DocsHome/nginx-docs/blob/master/SUMMARY.md) | [GitBook](https://www.gitbook.com/book/docshome/nginx-docs/details)
+在线阅读：[Github](blob/master/SUMMARY.md)
+
+## 关于此fork
+
+此fork目的是用于本人学习和修改，使之更加符合本人的阅读习惯。可能不进行完整翻译，但支持提交pull request。
 
 ## 安装
 
@@ -40,10 +44,6 @@ gitbook build
 ```
 
 更多操作命令，请参照 GitBook 命令。
-
-## 项目状态
-
-翻译中……
 
 ## 排版规范
 
